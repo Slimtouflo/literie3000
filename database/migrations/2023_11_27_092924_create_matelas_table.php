@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('matelas', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('marque_id')->constrained();
+            $table->string('marque');
             $table->string('type');
-            $table->foreignId('dimension_id')->constrained();
+            $table->string('dimension');
             $table->integer('prix');
             $table->integer('promo');
             $table->string('image');

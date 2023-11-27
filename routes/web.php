@@ -32,3 +32,7 @@ Route::get('/dimensions/{id}/supprimer', [DimensionsController::class, 'destroy'
 Route::get('/matelas', [MatelasController::class, 'index']);
 Route::get('/matelas/creer', [MatelasController::class, 'create']);
 Route::post('/matelas/creer', [MatelasController::class, 'store']);
+Route::get('/matelas/{id}', [MatelasController::class, 'show']);
+Route::get('/matelas/{id}/modifier', [MatelasController::class, 'edit']);
+Route::post('/matelas/{id}/modifier', [MatelasController::class, 'update']);
+Route::get('/matelas/{id}/supprimer', [MatelasController::class, 'destroy']);
