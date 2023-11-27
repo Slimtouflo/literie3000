@@ -3,6 +3,7 @@
 use App\Http\Controllers\DimensionsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MarqueController;
+use App\Http\Controllers\MatelasController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,3 +28,7 @@ Route::get('/dimensions', [DimensionsController::class, 'index']);
 Route::get('/dimensions/creer', [DimensionsController::class, 'create']);
 Route::post('/dimensions/creer', [DimensionsController::class, 'store']);
 Route::get('/dimensions/{id}/supprimer', [DimensionsController::class, 'destroy']);
+
+Route::get('/matelas', [MatelasController::class, 'index']);
+Route::get('/matelas/creer', [MatelasController::class, 'create']);
+Route::post('/matelas/creer', [MatelasController::class, 'store']);
